@@ -1,0 +1,24 @@
+/*Especificidad: 001*/
+body {
+  display: grid;
+  grid-template-columns: auto;
+  }
+
+/*Especificidad: 001 en todos*/
+header, footer, h1, h2, audio, video, form{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/*Especificidad: 001*/
+nav{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+/*Especificidad: 001*/
+section{
+  display: grid;
+  grid-template-columns: auto auto;
+  }
+
