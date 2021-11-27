@@ -6,7 +6,7 @@ body {
     }
 
 /*Especificidad: 001*/
-h1{
+main{
     color: rgb(0, 0, 0);
     background-color: #d2b48c;
     padding: 1em;
