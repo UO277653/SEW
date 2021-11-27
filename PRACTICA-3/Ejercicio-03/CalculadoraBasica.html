@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="author" content="Stelian Adrian Stanci (UO277653)">
+    <title>Ejercicio 3 - Calculadora Básica</title>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+    <h1> Calculadora básica </h1>
+    <form name="CalculadoraBasica">
+        <fieldset>
+            <label for="textAreaResultado"><textarea id="textAreaResultado" disabled></textarea></label>
+            <label for="botonMrc"><input id="botonMrc" type="button" value="mrc" onclick="calculadora.mrc()"/><br></label>
+            <label for="botonMmenos"><input id="botonMmenos" type="button" value="m-" onclick="calculadora.mMenos()"/><br></label>
+            <label for="botonMmas"><input id="botonMmas" type="button" value="m+" onclick="calculadora.mMas()"/><br></label>
+            <label for="botonDivision"><input id="botonDivision" type="button" value="/" onclick="calculadora.división()"/><br></label>
+            <label for="botonSiete"><input id="botonSiete" type="button" value="7" onclick="calculadora.dígitos('7')"/><br></label>
+            <label for="botonOcho"><input id="botonOcho" type="button" value="8" onclick="calculadora.dígitos('8')"/><br></label>
+            <label for="botonNueve"><input id="botonNueve" type="button" value="9" onclick="calculadora.dígitos('9')"/><br></label>
+            <label for="botonMultiplicacion"><input id="botonMultiplicacion" type="button" value="*" onclick="calculadora.multiplicación()"/><br></label>
+            <label for="botonCuatro"><input id="botonCuatro" type="button" value="4" onclick="calculadora.dígitos('4')"/><br></label>
+            <label for="botonCinco"><input id="botonCinco" type="button" value="5" onclick="calculadora.dígitos('5')"/><br></label>
+            <label for="botonSeis"><input id="botonSeis" type="button" value="6" onclick="calculadora.dígitos('6')"/><br></label>
+            <label for="botonMenos"><input id="botonMenos" type="button" value="-" onclick="calculadora.resta()"/><br></label>
+            <label for="botonUno"><input id="botonUno" type="button" value="1" onclick="calculadora.dígitos('1')"/><br></label>
+            <label for="botonDos"><input id="botonDos" type="button" value="2" onclick="calculadora.dígitos('2')"/><br></label>
+            <label for="botonTres"><input id="botonTres" type="button" value="3" onclick="calculadora.dígitos('3')"/><br></label>
+            <label for="botonMas"><input id="botonMas" type="button" value="+" onclick="calculadora.suma()"/><br></label>
+            <label for="botonCero"><input id="botonCero" type="button" value="0" onclick="calculadora.dígitos('0')"/><br></label>
+            <label for="botonComa"><input id="botonComa" type="button" value="." onclick="calculadora.punto()"/><br></label>
+            <label for="botonC"><input id="botonC" type="submit" value="C" onclick="calculadora.borrar()"/><br></label>
+            <label for="botonIgual"><input id="botonIgual" type="button" value="=" onclick="calculadora.igual()"/><br></label>
+        </fieldset>
+    </form>
+</body>
+</html>
