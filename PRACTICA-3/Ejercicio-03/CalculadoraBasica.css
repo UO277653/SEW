@@ -27,11 +27,10 @@ body > form > fieldset{
     column-gap: 1em;
     max-width: 26em;
     min-width: 13em;
-    
 }
 
 /* Especificidad: 005*/
-body > form > fieldset > label > textarea{
+body > form > fieldset > textarea{
     width:100%;
     height:100%;
     resize: none;
@@ -42,7 +41,7 @@ body > form > fieldset > label > textarea{
 }
 
 /*Especificidad: 005*/
-body > form > fieldset > label > input{
+body > form > fieldset > input{
     width: 100%;
     height: 100%;
     font-size: 2em;
@@ -53,36 +52,36 @@ body > form > fieldset > label > input{
 }
 
 /* Especificidad: 014*/
-body > form > fieldset > label:nth-child(1){
+body > form > fieldset > textarea{
     grid-column-start: 1;
     grid-column-end: 5;
     border-radius: 0.5em;
 }
 
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(5) > input,
+body > form > fieldset > input:nth-child(5),
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(9) > input,
+body > form > fieldset > input:nth-child(9),
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(13) > input,
+body > form > fieldset > input:nth-child(13),
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(17) > input{
+body > form > fieldset > input:nth-child(17){
     color: black;
     background-color: #ff4561;
 }
 
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(2) > input,
+body > form > fieldset > input:nth-child(2),
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(3) > input,
+body > form > fieldset > input:nth-child(3),
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(4) > input{
+body > form > fieldset > input:nth-child(4){
     color: white;
     background-color: #6f6f6f;
 }
 
 /*Especificidad: 015*/
-body > form > fieldset > label:nth-child(21) > input{
+body > form > fieldset > input:nth-child(21){
     color: black;
     background-color: #dddddd;
 }
