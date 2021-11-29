@@ -1,3 +1,2 @@
-document.write("<p>Idioma: ")
+document.write("Idioma: ")
 document.write(infoNavegador.idioma);
-document.write("</p>")
