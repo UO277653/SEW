@@ -17,7 +17,7 @@
 <body>
     <h1>Mapa dinámico Google</h1>
 
-    <p><input type="file" id="archivoTexto" onchange="miMapa.leerArchivoTexto(this.files);"></p>
+    <p><label for="archivoTexto"><input type="file" id="archivoTexto" onchange="miMapa.leerArchivoTexto(this.files);"></label></p>
     <input type="button"  Value="Cambiar a Madrid" onclick="miMapa.cambiarCiudad(40.463667, -3.74922)" />
     <input type="button"  Value="Cambiar a Oviedo" onclick="miMapa.cambiarCiudad(43.3672702, -5.8502461)" />
     <input type="button"  Value="Cambiar a Londres" onclick="miMapa.cambiarCiudad(51.507222, -0.1275)" />
