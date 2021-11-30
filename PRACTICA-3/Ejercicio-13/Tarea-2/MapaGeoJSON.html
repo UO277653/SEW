@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Mapa GeoJSON</title>
+
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="MapaGeoJSON.js"></script>
+</head>
+
+<body>
+
+    <h1>Ejercicio 13 (Tarea 2): Carga de archivo GeoJSON</h1>
+    <h2>Pulsa el botón y selecciona el archivo GeoJSON que quieras procesar</h2>
+
+    <p><input id="subirArchivo" type="file" name="Archivo" onchange="cargarArchivoGeoJSON(this.files);"></p>
+    <main id="mapa"></main>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxqm_LuNOc8dNy9xPc4TesQu4gNXqFct4&callback=mapaDinamicoGoogle.initMap">
+    </script>
+</body>
+</html>

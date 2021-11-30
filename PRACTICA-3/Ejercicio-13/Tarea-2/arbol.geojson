@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "arbol",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Stelian Adrian Stanci lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.882813609571699, 47.792702621389267 ] } },
+{ "type": "Feature", "properties": { "Name": "Vasile Stanci lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 23.0828136094717, 47.792702622491269 ] } },
+{ "type": "Feature", "properties": { "Name": "Florin Stanci lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 23.462813609471901, 46.46436262138927 ] } },
+{ "type": "Feature", "properties": { "Name": "Florin Stanci lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.903913609471701, 48.802702621399291 ] } },
+{ "type": "Feature", "properties": { "Name": "Mihai Stanci lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.8828136094717, 47.79274278448927 ] } },
+{ "type": "Feature", "properties": { "Name": "Mihai Stanci lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 23.983456609471698, 47.792702621389303 ] } },
+{ "type": "Feature", "properties": { "Name": "Florica Ardelean lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.892813609474, 48.003803621389672 ] } },
+{ "type": "Feature", "properties": { "Name": "Florica Ardelean lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.993813609471701, 47.802702621399298 ] } },
+{ "type": "Feature", "properties": { "Name": "Sofia Lungu lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.673813609391999, 47.403512621389268 ] } },
+{ "type": "Feature", "properties": { "Name": "Ioan Lungu lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.882813609759001, 47.663452621389268 ] } },
+{ "type": "Feature", "properties": { "Name": "Ioan Lungu lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.882813609356401, 47.792702621347651 ] } },
+{ "type": "Feature", "properties": { "Name": "Roxana Popescu lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.882813609875399, 47.792702621326541 ] } },
+{ "type": "Feature", "properties": { "Name": "Roxana Popescu lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.8828136099476, 47.792702624874622 ] } },
+{ "type": "Feature", "properties": { "Name": "Claudia Sipos lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.816736407795478, 47.610478998486464 ] } },
+{ "type": "Feature", "properties": { "Name": "Alin Sipos lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.882093609946502, 47.712702621382448 ] } },
+{ "type": "Feature", "properties": { "Name": "Alin Sipos lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.8828136068453, 47.792702628324527 ] } },
+{ "type": "Feature", "properties": { "Name": "Cosmin Sipos lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.608136098365001, 47.79300262147256 ] } },
+{ "type": "Feature", "properties": { "Name": "Cosmin Sipos lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.832813609372401, 47.792702621957801 ] } },
+{ "type": "Feature", "properties": { "Name": "Anastasia Ungur lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.402813609967499, 47.492702621376473 ] } },
+{ "type": "Feature", "properties": { "Name": "Anastasia Ungur lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.8828136083769, 47.792702621924732 ] } },
+{ "type": "Feature", "properties": { "Name": "Adriana Stefan lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.882813603432599, 47.712592621883417 ] } },
+{ "type": "Feature", "properties": { "Name": "Ionut Stefan lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.88289160899706, 47.792702621437243 ] } },
+{ "type": "Feature", "properties": { "Name": "Ionut Stefan lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.8828136000824, 47.792702621447233 ] } },
+{ "type": "Feature", "properties": { "Name": "Alexandra Hagi lugar de nacimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.422313607869899, 47.392702621553241 ] } },
+{ "type": "Feature", "properties": { "Name": "Alexandra Hagi lugar de fallecimiento", "description": null, "altitudeMode": "relativeToGround", "extrude": 1 }, "geometry": { "type": "Point", "coordinates": [ 22.082413602115, 47.795752621732241 ] } }
+]
+}

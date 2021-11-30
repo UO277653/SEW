@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE personas SYSTEM "arbol.dtd">
+<personas>
+	<persona nombre="Stelian Adrian" apellidos="Stanci">
+	<datos>
+		<fechaNacimiento>2001-08-29</fechaNacimiento>
+		<lugarNacimiento>Satu Mare, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.79270262138927</longitud>
+			<latitud>22.8828136095717</latitud>
+			<altitud>100</altitud>
+		</coordenadasNacimiento>
+		<foto>multimedia/fotoAdrian.jpg</foto>
+		<videos>
+			<video>multimedia/videoAdrian.mp4</video>
+		</videos>
+		<comentario>Estudiante en la Escuela de Ingeniería Informática</comentario>
+	</datos>
+	<persona nombre="Vasile" apellidos="Stanci">
+	<datos>
+		<fechaNacimiento>1967-06-09</fechaNacimiento>
+		<lugarNacimiento>Romanesti, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.79270262249127</longitud>
+			<latitud>23.0828136094717</latitud>
+			<altitud>103</altitud>
+		</coordenadasNacimiento>
+		<foto>multimedia/fotoPadre.jpg</foto>
+		<comentario>Profesión: Carpintero</comentario>
+	</datos>
+	<persona nombre="Florin" apellidos="Stanci">
+	<datos>
+		<fechaNacimiento>1939-04-14</fechaNacimiento>
+		<lugarNacimiento>Ocolis, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>46.46436262138927</longitud>
+			<latitud>23.4628136094719</latitud>
+			<altitud>95</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1989-05-29</fechaFallecimiento>
+		<lugarFallecimiento>Pashkivtsi, Ucrania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>48.80270262139929</longitud>
+			<latitud>22.9039136094717</latitud>
+			<altitud>93</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoAbueloPaterno.jpg</foto>
+		<comentario>Abuelo paterno</comentario>
+	</datos>
+	<persona nombre="Mihai" apellidos="Stanci">
+	<datos>
+		<fechaNacimiento>1904-01-05</fechaNacimiento>
+		<lugarNacimiento>Satu Mare, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.79274278448927</longitud>
+			<latitud>22.8828136094717</latitud>
+			<altitud>100</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1970-03-14</fechaFallecimiento>
+		<lugarFallecimiento>Calinesti, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79270262138930</longitud>
+			<latitud>23.9834566094717</latitud>
+			<altitud>80</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabueloPaterno1.jpg</foto>
+		<comentario>Bisabuelo paterno</comentario>
+	</datos>
+	</persona>
+	<persona nombre="Florica" apellidos="Ardelean">
+	<datos>
+		<fechaNacimiento>1910-11-26</fechaNacimiento>
+		<lugarNacimiento>Velyka Palad, Ucrania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>48.00380362138967</longitud>
+			<latitud>22.8928136094740</latitud>
+			<altitud>75</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1990-09-10</fechaFallecimiento>
+		<lugarFallecimiento>Odoreu, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.80270262139930</longitud>
+			<latitud>22.9938136094717</latitud>
+			<altitud>120</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabuelaPaterna1.jpg</foto>
+		<comentario>Bisabuela paterna</comentario>
+	</datos>
+	</persona>
+	</persona>
+	<persona nombre="Sofia" apellidos="Lungu">
+	<datos>
+		<fechaNacimiento>1944-12-19</fechaNacimiento>
+		<lugarNacimiento>Orbau, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.40351262138927</longitud>
+			<latitud>22.6738136093920</latitud>
+			<altitud>103</altitud>
+		</coordenadasNacimiento>
+		<foto>multimedia/fotoAbuelaPaterna.jpg</foto>
+		<comentario>Abuela paterna</comentario>
+	</datos>
+	<persona nombre="Ioan" apellidos="Lungu">
+	<datos>
+		<fechaNacimiento>1901-04-03</fechaNacimiento>
+		<lugarNacimiento>Ardud, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.66345262138927</longitud>
+			<latitud>22.882813609759</latitud>
+			<altitud>70</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1968-10-15</fechaFallecimiento>
+		<lugarFallecimiento>Satu Mare, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79270262134765</longitud>
+			<latitud>22.8828136093564</latitud>
+			<altitud>100</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabueloPaterno2.jpg</foto>
+		<comentario>Bisabuelo paterno</comentario>
+	</datos>
+	</persona>
+	<persona nombre="Roxana" apellidos="Popescu">
+	<datos>
+		<fechaNacimiento>1909-02-21</fechaNacimiento>
+		<lugarNacimiento>Satu Mare, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.79270262132654</longitud>
+			<latitud>22.8828136098754</latitud>
+			<altitud>103</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>2000-12-03</fechaFallecimiento>
+		<lugarFallecimiento>Satu Mare, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79270262487462</longitud>
+			<latitud>22.8828136099476</latitud>
+			<altitud>100</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabuelaPaterna2.jpg</foto>
+		<comentario>Bisabuela paterna</comentario>
+	</datos>
+	</persona>
+	</persona>
+	</persona>
+	<persona nombre="Claudia" apellidos="Sipos">
+	<datos>
+		<fechaNacimiento>1977-01-31</fechaNacimiento>
+		<lugarNacimiento>Ghirisa, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.610478998486464</longitud>
+			<latitud>22.816736407795478</latitud>
+			<altitud>110</altitud>
+		</coordenadasNacimiento>
+		<foto>multimedia/fotoMadre.jpg</foto>
+		<comentario>Profesión: Peluquera</comentario>
+	</datos>
+	<persona nombre="Alin" apellidos="Sipos">
+	<datos>
+		<fechaNacimiento>1950-07-26</fechaNacimiento>
+		<lugarNacimiento>Madaras, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.71270262138245</longitud>
+			<latitud>22.8820936099465</latitud>
+			<altitud>98</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>2010-10-09</fechaFallecimiento>
+		<lugarFallecimiento>Satu Mare, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79270262832453</longitud>
+			<latitud>22.8828136068453</latitud>
+			<altitud>100</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoAbueloMaterno.jpg</foto>
+		<comentario>Abuelo materno</comentario>
+	</datos>
+	<persona nombre="Cosmin" apellidos="Sipos">
+	<datos>
+		<fechaNacimiento>1918-08-06</fechaNacimiento>
+		<lugarNacimiento>Csengerujfalu, Ucrania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.79300262147256</longitud>
+			<latitud>22.608136098365</latitud>
+			<altitud>110</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1990-05-06</fechaFallecimiento>
+		<lugarFallecimiento>Satu Mare, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.7927026219578</longitud>
+			<latitud>22.8328136093724</latitud>
+			<altitud>107</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabueloMaterno1.jpg</foto>
+		<comentario>Bisabuelo Materno</comentario>
+	</datos>
+	</persona>
+	<persona nombre="Anastasia" apellidos="Ungur">
+	<datos>
+		<fechaNacimiento>1908-09-22</fechaNacimiento>
+		<lugarNacimiento>Pir, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.49270262137647</longitud>
+			<latitud>22.4028136099675</latitud>
+			<altitud>79</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1999-03-07</fechaFallecimiento>
+		<lugarFallecimiento>Satu Mare, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79270262192473</longitud>
+			<latitud>22.8828136083769</latitud>
+			<altitud>97</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabuelaMaterna1.jpg</foto>
+		<comentario>Bisabuela materna</comentario>
+	</datos>
+	</persona>
+	</persona>
+	<persona nombre="Adriana" apellidos="Stefan">
+	<datos>
+		<fechaNacimiento>1940-01-03</fechaNacimiento>
+		<lugarNacimiento>Madaras, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.71259262188342</longitud>
+			<latitud>22.8828136034326</latitud>
+			<altitud>87</altitud>
+		</coordenadasNacimiento>
+		<foto>multimedia/fotoAbuelaMaterna.jpg</foto>
+		<comentario>Abuela materna</comentario>
+	</datos>
+	<persona nombre="Ionut" apellidos="Stefan">
+	<datos>
+		<fechaNacimiento>1900-12-01</fechaNacimiento>
+		<lugarNacimiento>Satu Mare, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.79270262143724</longitud>
+			<latitud>22.88289160899706</latitud>
+			<altitud>92</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>1970-03-08</fechaFallecimiento>
+		<lugarFallecimiento>Satu Mare, Rumania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79270262144723</longitud>
+			<latitud>22.8828136000824</latitud>
+			<altitud>94</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabueloMaterno2.jpg</foto>
+		<comentario>Bisabuelo materno</comentario>
+	</datos>
+	</persona>
+	<persona nombre="Alexandra" apellidos="Hagi">
+	<datos>
+		<fechaNacimiento>1904-02-14</fechaNacimiento>
+		<lugarNacimiento>Ghenetea, Rumania</lugarNacimiento>
+		<coordenadasNacimiento>
+			<longitud>47.39270262155324</longitud>
+			<latitud>22.4223136078699</latitud>
+			<altitud>98</altitud>
+		</coordenadasNacimiento>
+		<fechaFallecimiento>2004-10-27</fechaFallecimiento>
+		<lugarFallecimiento>Nyirbogat, Ucrania</lugarFallecimiento>
+		<coordenadasFallecimiento>
+			<longitud>47.79575262173224</longitud>
+			<latitud>22.082413602115</latitud>
+			<altitud>100</altitud>
+		</coordenadasFallecimiento>
+		<foto>multimedia/fotoBisabuelaMaterna2.jpg</foto>
+		<comentario>Bisabuela materna</comentario>
+	</datos>
+	</persona>
+	</persona>
+	</persona>
+	</persona>
+</personas>
