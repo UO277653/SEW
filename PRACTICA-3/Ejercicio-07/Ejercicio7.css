@@ -1,0 +1,30 @@
+/*Especificidad: 001*/
+body {
+    font-family: Tahoma, sans-serif;
+    background-color:burlywood;
+    color: white;
+    padding: 1em;
+}
+
+/*Especificidad: 001*/
+h1 {
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/*Especificidad: 001*/
+h2 {
+    text-align: left;
+    padding: 0.3em;
+}
+
+/*Especificidad: 001*/
+h3 {
+    text-align: left;
+}
+
+/*Especificidad: 001*/
+p {
+    text-align: justify;
+}
