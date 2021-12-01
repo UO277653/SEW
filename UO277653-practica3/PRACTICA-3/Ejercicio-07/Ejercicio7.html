@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Stelian Adrian Stanci UO277653">
+    <title>Ejercicio 7</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+    <h1 id="encabezado1">
+        Este texto está dentro de un h1
+    </h1>
+
+    <input type="button"  Value="Ocultar encabezados de primer nivel" onclick="acciones.ocultarEncabezados1()" />
+    <input type="button"  Value="Mostrar encabezados de primer nivel" onclick="acciones.mostrarEncabezados1()" />
+
+    <h2 id="encabezado2"> 
+        Este texto está dentro de un h2
+    </h2>
+
+    <h3 id="encabezado3">
+        Este otro texto está dentro de un h3
+    </h3>
+
+    <input type="button"  Value="Mostrar atributos de los encabezados" onclick="acciones.mostrarAtributosEncabezados()" />
+    <input type="button"  Value="Modificar atributos de los encabezados" onclick="acciones.modificarAtributosEncabezados()" />
+
+    <p>
+        Párrafo necesario para el ejercicio
+    </p>
+
+    <p id="append">
+        Segundo párrafo
+    </p>
+
+    <input type="button"  Value="Ocultar parrafos" onclick="acciones.ocultarParrafos()" />
+    <input type="button"  Value="Mostrar parrafos" onclick="acciones.mostrarParrafos()" />
+
+    <input type="button"  Value="Crear elementos" onclick="acciones.crearElementos()" />
+    <input type="button"  Value="Eliminar elementos añadidos con append" onclick="acciones.eliminarAppend()" />
+
+    <input type="button"  Value="Recorrer DOM" onclick="acciones.recorrerDOM()" />
+
+    <table>
+        <caption> Titulo </caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <input type="button"  Value="Sumar filas y columnas" onclick="acciones.sumarFilasYColumnas()" />
+</body>
+</html>

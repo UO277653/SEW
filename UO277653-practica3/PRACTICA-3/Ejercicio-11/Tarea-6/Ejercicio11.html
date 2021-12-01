@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <meta name="author" content="Stelian Adrian Stanci UO277653">
+    <title>Ejercicio 11</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio11.js"></script>
+</head>
+
+<body>
+    <h1>Mapa dinámico Google</h1>
+
+    <p><label for="archivoTexto">Archivo: <input type="file" id="archivoTexto" onchange="miMapa.leerArchivoTexto(this.files);"></label></p>
+    <input type="button"  Value="Cambiar a Madrid" onclick="miMapa.cambiarCiudad(40.463667, -3.74922)" />
+    <input type="button"  Value="Cambiar a Oviedo" onclick="miMapa.cambiarCiudad(43.3672702, -5.8502461)" />
+    <input type="button"  Value="Cambiar a Londres" onclick="miMapa.cambiarCiudad(51.507222, -0.1275)" />
+    
+    <main id="mapa"></main>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxqm_LuNOc8dNy9xPc4TesQu4gNXqFct4&callback=mapaDinamicoGoogle.initMap">
+    </script>
+</body>
+</html>

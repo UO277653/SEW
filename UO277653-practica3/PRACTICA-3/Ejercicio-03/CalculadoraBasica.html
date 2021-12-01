@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="author" content="Stelian Adrian Stanci (UO277653)">
+    <title>Ejercicio 3 - Calculadora Básica</title>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora básica</h1>
+    <p>Práctica JavaScript</p>
+    
+    <form name="CalculadoraBasica">
+        <fieldset>
+            <textarea title="Resultado" id="textAreaResultado" disabled></textarea>
+            <input id="botonMrc" type="button" value="mrc" onclick="calculadora.mrc()"/>
+            <input id="botonMmenos" type="button" value="m-" onclick="calculadora.mMenos()"/>
+            <input id="botonMmas" type="button" value="m+" onclick="calculadora.mMas()"/>
+            <input id="botonDivision" type="button" value="/" onclick="calculadora.división()"/>
+            <input id="botonSiete" type="button" value="7" onclick="calculadora.dígitos('7')"/>
+            <input id="botonOcho" type="button" value="8" onclick="calculadora.dígitos('8')"/>
+            <input id="botonNueve" type="button" value="9" onclick="calculadora.dígitos('9')"/>
+            <input id="botonMultiplicacion" type="button" value="*" onclick="calculadora.multiplicación()"/>
+            <input id="botonCuatro" type="button" value="4" onclick="calculadora.dígitos('4')"/>
+            <input id="botonCinco" type="button" value="5" onclick="calculadora.dígitos('5')"/>
+            <input id="botonSeis" type="button" value="6" onclick="calculadora.dígitos('6')"/>
+            <input id="botonMenos" type="button" value="-" onclick="calculadora.resta()"/>
+            <input id="botonUno" type="button" value="1" onclick="calculadora.dígitos('1')"/>
+            <input id="botonDos" type="button" value="2" onclick="calculadora.dígitos('2')"/>
+            <input id="botonTres" type="button" value="3" onclick="calculadora.dígitos('3')"/>
+            <input id="botonMas" type="button" value="+" onclick="calculadora.suma()"/>
+            <input id="botonCero" type="button" value="0" onclick="calculadora.dígitos('0')"/>
+            <input id="botonComa" type="button" value="." onclick="calculadora.punto()"/>
+            <input id="botonC" type="submit" value="C" onclick="calculadora.borrar()"/>
+            <input id="botonIgual" type="button" value="=" onclick="calculadora.igual()"/>
+        </fieldset>
+    </form>
+</body>
+</html>

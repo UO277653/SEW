@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Stelian Adrian Stanci lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136095717, 47.79270262138927, 100</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Vasile Stanci lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+23.0828136094717, 47.79270262249127, 103</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Florin Stanci lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+23.4628136094719, 46.46436262138927, 95</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Florin Stanci lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.9039136094717, 48.80270262139929, 93</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Mihai Stanci lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136094717, 47.79274278448927, 100</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Mihai Stanci lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+23.9834566094717, 47.79270262138930, 80</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Florica Ardelean lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8928136094740, 48.00380362138967, 75</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Florica Ardelean lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.9938136094717, 47.80270262139930, 120</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Sofia Lungu lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.6738136093920, 47.40351262138927, 103</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Ioan Lungu lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.882813609759, 47.66345262138927, 70</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Ioan Lungu lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136093564, 47.79270262134765, 100</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Roxana Popescu lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136098754, 47.79270262132654, 103</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Roxana Popescu lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136099476, 47.79270262487462, 100</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Claudia Sipos lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.816736407795478, 47.610478998486464, 110</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Alin Sipos lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8820936099465, 47.71270262138245, 98</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Alin Sipos lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136068453, 47.79270262832453, 100</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Cosmin Sipos lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.608136098365, 47.79300262147256, 110</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Cosmin Sipos lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8328136093724, 47.7927026219578, 107</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Anastasia Ungur lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.4028136099675, 47.49270262137647, 79</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Anastasia Ungur lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136083769, 47.79270262192473, 97</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Adriana Stefan lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136034326, 47.71259262188342, 87</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Ionut Stefan lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.88289160899706, 47.79270262143724, 92</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Ionut Stefan lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.8828136000824, 47.79270262144723, 94</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Alexandra Hagi lugar de nacimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.4223136078699, 47.39270262155324, 98</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Alexandra Hagi lugar de fallecimiento</name>
+<Point>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+22.082413602115, 47.79575262173224, 100</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+<Style> id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
