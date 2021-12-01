@@ -12,6 +12,13 @@ h1{
     padding: 1em;
 }
 
+/*Especificidad: 001*/
+p{
+    color: rgb(0, 0, 0);
+    background-color: #d2b48c;
+    padding: 0.5em;
+}
+
 /*Especificidad: 003*/
 body > form > fieldset{
     padding: 1.5em;
