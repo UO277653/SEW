@@ -18,7 +18,7 @@
 <body>
     <h1>Calculadora básica</h1>
     <?php
-        class Calculadora {
+        class CalculadoraBasica {
 
             private $pantalla;
             private $memoria;
@@ -102,11 +102,11 @@
             }
         }
 
-        if(!isset($_SESSION['calculadora'])){
-            $_SESSION['calculadora'] = new Calculadora();
+        if(!isset($_SESSION['calculadoraBasica'])){
+            $_SESSION['calculadoraBasica'] = new CalculadoraBasica();
         }
 
-        $calculadora = $_SESSION['calculadora'];
+        $calculadora = $_SESSION['calculadoraBasica'];
 
         if (count($_POST)>0) 
         {   
