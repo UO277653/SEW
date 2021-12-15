@@ -1,0 +1,108 @@
+/*Especificidad: 001*/
+body {
+    font-family: Tahoma, sans-serif;
+    color: #818181;
+    background-color: #dbdbdb;
+    }
+
+/*Especificidad: 001*/
+h1{
+    color: rgb(0, 0, 0);
+    background-color: #dbdbdb;
+    padding: 0.5em;
+    
+}
+
+/*Especificidad: 001*/
+p{
+    color: rgb(0, 0, 0);
+    background-color: #dbdbdb;
+    padding: 0.5em;
+}
+
+/*Especificidad: 003*/
+body > form > fieldset{
+    padding: 1.5em;
+    background-color: #3d4543;
+    color: black;
+    border-radius: 0.8em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-style: none;
+    height: 40em;
+    row-gap: 1.5em;
+    column-gap: 1em;
+    max-width: 20em;
+    min-width: 13em;
+
+    margin: 0 auto;
+}
+
+/* Especificidad: 004*/
+body > form > fieldset > textarea{
+    width:100%;
+    height:100%;
+    resize: none;
+    text-align: right;
+    background-color: #ffffff;
+    color: black;
+    border-style: inset;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 0.5em;
+
+    font-size: 2em;
+}
+
+/* Especificidad: 014*/
+body > form > fieldset > textarea:nth-child(1){
+
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+/*Especificidad: 004*/
+body > form > fieldset > input{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    background-color: #dddddd;
+    color: black;
+    border-radius: 0.3em;
+    border-style: none;
+}
+
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(3),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(4),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(5),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(6),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(7),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(8),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(14),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(18),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(22),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(26){
+    color: white;
+    background-color: #6f6f6f;
+}
+
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(9),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(10),
+/*Especificidad: 014*/
+body > form > fieldset > input:nth-child(25){
+    color: black;
+    background-color: #ff4561;
+}
