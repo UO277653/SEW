@@ -16,6 +16,11 @@ h2{
 }
 
 /*Especificidad: 001*/
+p{
+    font-size: large;
+}
+
+/*Especificidad: 001*/
 picture{
     padding-top:0.5em;
 }
@@ -41,4 +46,5 @@ ul{
     line-height: 25px;
     display: grid;
     grid-template-columns: auto auto auto;
+    font-size: large;
 }
