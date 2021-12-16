@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="author" content="Stelian Adrian Stanci (UO277653)">
+    <title>Ejercicio 5 - Calculadora RPN</title>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora RPN</h1>
+    <p>GUÍA: Este tipo de calculadora es un poco diferente a las convencionales, como se puede ver no cuenta con un botón "=", para utilizarla, lo primero que se tiene que hacer será introducir los números que formen parte de la operación, y luego pulsar el botón de la operación.</p>
+
+    <ul>
+        <li>En la pantalla superior se almacenan todos los números, y sólo se pueden hacer operaciones con ellos, en la pantalla inferior escribimos lo que queremos introducir en la pantalla superior, pero no se puede usar para hacer la operación hasta que lo introducimos en la superior con "Enter".</li>
+        <li>Si por ejemplo queremos hacer la operación 5+3, primero hacemos click en el número 5, después en "Enter" para cargarlo, luego hacemos lo mismo con el 3, y por último, con ambos números cargados, hacemos click en el botón de la operación "+", y ya nos quedará el resultado. Las operaciones con un sólo operando siguen la misma lógica.</li>
+        <li>En el caso de que queramos utilizar paréntesis, a pesar de que la calculadora no los proporcione, también es posible hacerlo. Por ejemplo, para la operación (2+3)*(4-2) primero introducimos el 2 y el 3, los sumamos, luego introducimos el 4 y el 2, los restamos, y después multiplicamos los dos operandos que quedan en la pantalla superior.</li>
+        <li>En caso de que se produzca un error en la operación, saldrá "NaN" en la pantalla superior. En caso de que ocurra esto tenemos que borrar el contenido de la pantalla con el botón "Borrar".</li>
+    </ul>
+    
+    <form name="CalculadoraRPN">
+        <fieldset>
+            <textarea title="textAreaPantallaSuperior" id="textAreaPantallaSuperior" disabled></textarea>
+            <textarea title="textAreaPantallaInferior" id="textAreaPantallaInferior" disabled></textarea>
+
+            <input id="botonArcSin" type="button" value="asin" onclick="calculadora.arcsin()"/>
+            <input id="botonArcCos" type="button" value="acos" onclick="calculadora.arccos()"/>
+            <input id="botonArcTan" type="button" value="atan" onclick="calculadora.arctan()"/>
+            <input id="botonTan" type="button" value="tan" onclick="calculadora.tan()"/>
+
+            <input id="botonSin" type="button" value="sin" onclick="calculadora.sin()"/>
+            <input id="botonCos" type="button" value="cos" onclick="calculadora.cos()"/>
+            <input id="botonRetroceder" type="button" value="🡠" onclick="calculadora.retroceder()"/>
+            <input id="botonEnter" type="button" value="Enter" onclick="calculadora.enter()"/>
+            
+
+            <input id="botonSiete" type="button" value="7" onclick="calculadora.dígitos('7')"/>
+            <input id="botonOcho" type="button" value="8" onclick="calculadora.dígitos('8')"/>
+            <input id="botonNueve" type="button" value="9" onclick="calculadora.dígitos('9')"/>
+            <input id="botonDivision" type="button" value="/" onclick="calculadora.division()"/>
+
+            
+            <input id="botonCuatro" type="button" value="4" onclick="calculadora.dígitos('4')"/>
+            <input id="botonCinco" type="button" value="5" onclick="calculadora.dígitos('5')"/>
+            <input id="botonSeis" type="button" value="6" onclick="calculadora.dígitos('6')"/>
+            <input id="botonMultiplicacion" type="button" value="*" onclick="calculadora.multiplicacion()"/>
+
+            
+            <input id="botonUno" type="button" value="1" onclick="calculadora.dígitos('1')"/>
+            <input id="botonDos" type="button" value="2" onclick="calculadora.dígitos('2')"/>
+            <input id="botonTres" type="button" value="3" onclick="calculadora.dígitos('3')"/>
+            <input id="botonMenos" type="button" value="-" onclick="calculadora.resta()"/>
+
+            
+            <input id="botonCero" type="button" value="0" onclick="calculadora.dígitos('0')"/>
+            <input id="botonComa" type="button" value="." onclick="calculadora.punto()"/>
+            <input id="botonBorrar" type="submit" value="Borrar" onclick="calculadora.borrar()"/>
+            <input id="botonMas" type="button" value="+" onclick="calculadora.suma()"/>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
