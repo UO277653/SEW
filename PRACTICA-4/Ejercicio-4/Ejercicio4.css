@@ -1,0 +1,44 @@
+/*Especificidad: 001*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.75em;
+    border-style: solid;
+}
+
+/*Especificidad: 001*/
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: normal;
+    line-height: 1.3em;
+    text-align: justify;
+    padding-right: 0.5em;
+}
+
+/*Especificidad: 001*/
+picture{
+    padding-top:0.5em;
+}
+
+/*Especificidad: 001*/
+img{
+    border-style:groove;
+    border-width: 0.4em;
+}
+
+/*Especificidad: 001*/
+section{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/*Especificidad: 001*/
+ul{
+    color:#2b2b2b;
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 0.25em dashed;
+    padding: 2em;
+    line-height: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
