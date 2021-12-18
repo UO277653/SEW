@@ -47,6 +47,7 @@
 
     <section > <a id="insertarFila"></a>
         <h2>Insertar una fila en la tabla</h2>
+        <p>Introduce los datos y pulsa el botón para agregar una fila en la tabla</p>
         <form name='insertarFila' method='post' action="Ejercicio6.php">
             <fieldset>
                 <label for="txtDni"> DNI:<input id="txtDni" type="text" name="dni" /> </label>
@@ -69,6 +70,7 @@
 
     <section > <a id="buscarDatos"></a>
         <h2>Buscar datos de una persona en la tabla</h2>
+        <p>Introduce el DNI de la persona y pulsa el botón para que se muestren sus datos</p>
         <form name='buscarDatos' method='post' action="Ejercicio6.php">
             <fieldset>
                 <label for="dniBuscar">DNI:<input id="dniBuscar" type="text" name="dniBuscar" /> </label>
@@ -79,6 +81,7 @@
 
     <section > <a id="modificarFila"></a>
         <h2>Modifica los datos de una fila</h2>
+        <p>Introduce el DNI de la persona cuyos datos quieres modificar, introduce los datos nuevos y pulsa el botón para modificarlos</p>
         <form name='modificarFila' method='post' action="Ejercicio6.php">
             <fieldset>
                 <label for="txtDniAModificar">DNI a modificar:<input id="txtDniAModificar" type="text" name="dniParam" /> </label>
@@ -102,6 +105,7 @@
 
     <section > <a id="borrarDatos"></a>
         <h2>Borrar datos de una persona en la tabla</h2>
+        <p>Introduce el DNI de la persona y pulsa el botón para que se borren sus datos</p>
         <form name='borrarDatos' method='post' action="Ejercicio6.php">
             <fieldset>
                 <label for="dniBorrar">DNI:<input id="dniBorrar" type="text" name="dniBorrar" /> </label>
@@ -112,6 +116,7 @@
 
     <section > <a id="generarInforme"></a>
         <h2>Generar el informe de estadísticas</h2>
+        <p>Pulsa el botón para generar el informe</p>
         <form name='generarInforme' method='post'>
             <fieldset>
                 <input id='botonGenerarInforme' type='submit' name='botonGenerarInforme' value='Generar informe'/>
@@ -121,19 +126,21 @@
 
     <section > <a id="exportarDatos"></a>
         <h2>Exportar los datos a un fichero CSV</h2>
+        <p>Pulsa el botón para exportar los datos actuales</p>
         <form name='exportarDatos' method='post'>
             <fieldset>
-                <input id='botonExportarDatos' type='submit' name='botonExportarDatos' value='Exportar datos'/>
+            <input id='botonExportarDatos' type='submit' name='botonExportarDatos' value='Exportar datos'/>
             </fieldset>
 		</form>
     </section>
 
     <section > <a id="importarDatos"></a>
         <h2>Importar los datos desde un fichero CSV</h2>
+        <p>Selecciona el archivo CSV a importar y pulsa el botón para cargar los datos</p>
         <form name='importarDatos' action='#' method='post' enctype='multipart/form-data'>
             <fieldset>
                 <label for="archivoACargar"><input id='archivoACargar' type='file' name='archivoACargar'/></label>
-                <input id='botonImportarDatos' type='submit' name='botonImportarDatos' value='Importar datos'/>
+                <label for="botonImportarDatos"><input id='botonImportarDatos' type='submit' name='botonImportarDatos' value='Importar datos'/></label>
             </fieldset>
 		</form>
     </section>
