@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="author" content="Stelian Adrian Stanci (UO277653)">
+    <title>Ejercicio 6</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio6.css" />
+</head>
+
+<body>
+    <h1>Ejercicio 6</h1>
+    <nav>
+            <a title="Crear base de datos" accesskey="C" tabindex="1" href="#crearBase">Crear base de datos</a>
+            <a title="Crear tabla" accesskey="T" tabindex="2" href="#crearTabla">Crear tabla</a>
+            <a title="Insertar datos" accesskey="I" tabindex="3" href="#insertarFila">Insertar datos</a>
+            <a title="Buscar datos" accesskey="B" tabindex="4" href="#buscarDatos">Buscar datos</a>
+            <a title="Modificar datos" accesskey="M" tabindex="5" href="#modificarFila">Modificar datos</a>
+            <a title="Eliminar datos" accesskey="E" tabindex="6" href="#borrarDatos">Eliminar datos</a>
+            <a title="Generar informe" accesskey="G" tabindex="7" href="#generarInforme">Generar informe</a>
+            <a title="Exportar a CSV" accesskey="X" tabindex="8" href="#exportarDatos">Exportar a CSV</a>
+            <a title="Importar CSV" accesskey="B" tabindex="9" href="#importarDatos">Importar CSV</a>
+        </nav>
+    <section > <a id="crearBase"></a>
+        <h2>
+            Crear la base de datos
+        </h2>
+        <form name='crearBase' method='post'>
+            <fieldset>
+                <input id='botonCrearBase' type='submit' name='botonCrearBase' value='Crear base de datos'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="crearTabla"></a>
+        <h2>
+            Crear la tabla PruebasUsabilidad
+        </h2>
+        <form name='crearTabla' method='post'>
+            <fieldset>
+                <input id='botonCrearTabla' type='submit' name='botonCrearTabla' value='Crear tabla'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="insertarFila"></a>
+        <h2>
+             Insertar una fila en la tabla
+        </h2>
+        <form name='insertarFila' method='post' action="Ejercicio6.php">
+            <fieldset>
+                <p>DNI:<input type="text" name="dni" /> </p>
+                <p>Nombre: <input type="text" name="nombre" /> </p>
+                <p>Apellidos: <input type="text" name="apellidos" /></p>
+                <p>Email: <input type="text" name="email" /></p>
+                <p>Teléfono: <input type="text" name="telefono" /></p>
+                <p>Edad: <input type="number" name="edad" /></p>
+                <p>Sexo: <input type="text" name="sexo" /></p>
+                <p>Nivel de pericia informática: <input type="number" name="pericia" /></p>
+                <p>Tiempo: <input type="number" name="tiempo" /></p>
+                <p>Tarea realizada correctamente (SI/NO): <input type="text" name="correctamente" /></p>
+                <p>Comentarios: <input type="text" name="comentarios" /></p>
+                <p>Propuestas de mejora: <input type="text" name="propuestas" /></p>
+                <p>Valoración: <input type="number" name="valoracion" /></p>
+                <input id='botoninsertarFila' type='submit' name='botoninsertarFila' value='Insertar fila'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="buscarDatos"></a>
+        <h2>
+             Buscar datos de una persona en la tabla
+        </h2>
+        <form name='buscarDatos' method='post' action="Ejercicio6.php">
+            <fieldset>
+                <p>DNI:<input type="text" name="dniBuscar" /> </p>
+                <input id='botonBuscarDatos' type='submit' name='botonBuscarDatos' value='Buscar datos'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="modificarFila"></a>
+        <h2>
+             Modifica los datos de una fila
+        </h2>
+        <form name='modificarFila' method='post' action="Ejercicio6.php">
+            <fieldset>
+                <p>DNI a modificar:<input type="text" name="dniParam" /> </p>
+                <p>DNI:<input type="text" name="dniModificado" /> </p>
+                <p>Nombre: <input type="text" name="nombreModificado" /> </p>
+                <p>Apellidos: <input type="text" name="apellidosModificado" /></p>
+                <p>Email: <input type="text" name="emailModificado" /></p>
+                <p>Teléfono: <input type="text" name="telefonoModificado" /></p>
+                <p>Edad: <input type="number" name="edadModificado" /></p>
+                <p>Sexo: <input type="text" name="sexoModificado" /></p>
+                <p>Nivel de pericia informática: <input type="number" name="periciaModificado" /></p>
+                <p>Tiempo: <input type="number" name="tiempoModificado" /></p>
+                <p>Tarea realizada correctamente (SI/NO): <input type="text" name="correctamenteModificado" /></p>
+                <p>Comentarios: <input type="text" name="comentariosModificado" /></p>
+                <p>Propuestas de mejora: <input type="text" name="propuestasModificado" /></p>
+                <p>Valoración: <input type="number" name="valoracionModificado" /></p>
+                <input id='botonModificarFila' type='submit' name='botonModificarFila' value='Modificar fila'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="borrarDatos"></a>
+        <h2>
+             Borrar datos de una persona en la tabla
+        </h2>
+        <form name='borrarDatos' method='post' action="Ejercicio6.php">
+            <fieldset>
+                <p>DNI:<input type="text" name="dniBorrar" /> </p>
+                <input id='botonBorrarDatos' type='submit' name='botonBorrarDatos' value='Borrar datos'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="generarInforme"></a>
+        <h2>
+            Generar el informe de estadísticas
+        </h2>
+        <form name='generarInforme' method='post'>
+            <fieldset>
+                <input id='botonGenerarInforme' type='submit' name='botonGenerarInforme' value='Generar informe'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="exportarDatos"></a>
+        <h2>
+            Exportar los datos a un fichero CSV
+        </h2>
+        <form name='exportarDatos' method='post'>
+            <fieldset>
+                <input id='botonExportarDatos' type='submit' name='botonExportarDatos' value='Exportar datos'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="importarDatos"></a>
+        <h2>
+            Importar los datos desde un fichero CSV
+        </h2>
+        <form name='importarDatos' action='#' method='post' enctype='multipart/form-data'>
+            <fieldset>
+                <input id='archivoACargar' type='file' name='archivoACargar'/>
+                <input id='botonImportarDatos' type='submit' name='botonImportarDatos' value='Importar datos'/>
+            </fieldset>
+		</form>
+    </section>
+
+    </body>
+</html>
