@@ -17,7 +17,7 @@
 
 <body>
     <h1>Calculadora RPN</h1>
-
+    <p>Práctica PHP</p>
     <?php
         class Pila {
 
@@ -103,8 +103,6 @@
                     $this->pila->push($res);
                     $this->pantallaSuperior = $this->pila->mostrar();
                 }
-
-                // else lanzar excepción?
             }
 
             function resta(){
@@ -186,7 +184,7 @@
             }
 
             function retroceder(){
-                $nuevoValor = $this->pantallaInferior.substring(0, $this->pantallaInferior->length - 1);
+                $nuevoValor = substr($this->pantallaInferior, 0, -1);
                 $this->pantallaInferior = $nuevoValor;
             }
 
