@@ -53,20 +53,20 @@
         </h2>
         <form name='insertarFila' method='post' action="Ejercicio6.php">
             <fieldset>
-                <p>DNI:<input type="text" name="dni" /> </p>
-                <p>Nombre: <input type="text" name="nombre" /> </p>
-                <p>Apellidos: <input type="text" name="apellidos" /></p>
-                <p>Email: <input type="text" name="email" /></p>
-                <p>Teléfono: <input type="text" name="telefono" /></p>
-                <p>Edad: <input type="number" name="edad" /></p>
-                <p>Sexo: <input type="text" name="sexo" /></p>
-                <p>Nivel de pericia informática: <input type="number" name="pericia" /></p>
-                <p>Tiempo: <input type="number" name="tiempo" /></p>
-                <p>Tarea realizada correctamente (SI/NO): <input type="text" name="correctamente" /></p>
-                <p>Comentarios: <input type="text" name="comentarios" /></p>
-                <p>Propuestas de mejora: <input type="text" name="propuestas" /></p>
-                <p>Valoración: <input type="number" name="valoracion" /></p>
-                <input id='botoninsertarFila' type='submit' name='botoninsertarFila' value='Insertar fila'/>
+                <label for="txtDni"> DNI:<input id="txtDni" type="text" name="dni" /> </label>
+                <label for="txtNombre"> Nombre: <input id="txtNombre" type="text" name="nombre" /> </label>
+                <label for="txtApellidos"> Apellidos: <input id="txtApellidos" type="text" name="apellidos" /></label>
+                <label for="txtEmail"> Email: <input id="txtEmail" type="text" name="email" /></label>
+                <label for="txtTelefono"> Teléfono: <input id="txtTelefono" type="text" name="telefono" /></label>
+                <label for="nEdad"> Edad: <input id="nEdad" type="number" name="edad" /></label>
+                <label for="txtSexo"> Sexo: <input id="txtSexo" type="text" name="sexo" /></label>
+                <label for="nNivelPericia"> Nivel de pericia informática: <input id="nNivelPericia" type="number" name="pericia" /></label>
+                <label for="nTiempo"> Tiempo: <input id="nTiempo" type="number" name="tiempo" /></label>
+                <label for="txtCorrecto"> Tarea realizada correctamente (SI/NO): <input id="txtCorrecto" type="text" name="correctamente" /></label>
+                <label for="txtComentario"> Comentarios: <input id="txtComentario" type="text" name="comentarios" /></label>
+                <label for="txtPropuesta"> Propuestas de mejora: <input id="txtPropuesta" type="text" name="propuestas" /></label>
+                <label for="nValoracion"> Valoración: <input id="nValoracion" type="number" name="valoracion" /></label>
+                <label for="botoninsertarFila"><input id='botoninsertarFila' type='submit' name='botoninsertarFila' value='Insertar fila'/></label>
             </fieldset>
 		</form>
     </section>
@@ -77,7 +77,7 @@
         </h2>
         <form name='buscarDatos' method='post' action="Ejercicio6.php">
             <fieldset>
-                <p>DNI:<input type="text" name="dniBuscar" /> </p>
+                <p>DNI:<input type="text" name="dniBuscar" /> 
                 <input id='botonBuscarDatos' type='submit' name='botonBuscarDatos' value='Buscar datos'/>
             </fieldset>
 		</form>
