@@ -16,7 +16,6 @@ section > h1 {
 /*Especificidad: 001*/
 nav {
     color:#000000;
-    background-color: #e3e3c4;
     text-transform: uppercase;
     padding: 1em;
     text-align: center;

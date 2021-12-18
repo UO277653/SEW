@@ -29,10 +29,9 @@
             <a title="Importar CSV" accesskey="B" tabindex="9" href="#importarDatos">Importar CSV</a>
         </nav>
     <section > <a id="crearBase"></a>
-        <h2>
-            Crear la base de datos
-        </h2>
-        <form name='crearBase' method='post'>
+        <h2>Crear la base de datos</h2>
+        <p>Pulsa el botón para que la base de datos de este ejercicio se cree</p>
+        <form name='crearBase' method='post' action="Ejercicio6.php">
             <fieldset>
                 <input id='botonCrearBase' type='submit' name='botonCrearBase' value='Crear base de datos'/>
             </fieldset>
@@ -40,10 +39,9 @@
     </section>
 
     <section > <a id="crearTabla"></a>
-        <h2>
-            Crear la tabla PruebasUsabilidad
-        </h2>
-        <form name='crearTabla' method='post'>
+        <h2>Crear la tabla PruebasUsabilidad</h2>
+        <p>Pulsa el botón para que se cree una tabla en la base de datos</p>
+        <form name='crearTabla' method='post' action="Ejercicio6.php">
             <fieldset>
                 <input id='botonCrearTabla' type='submit' name='botonCrearTabla' value='Crear tabla'/>
             </fieldset>
@@ -51,82 +49,77 @@
     </section>
 
     <section > <a id="insertarFila"></a>
-        <h2>
-             Insertar una fila en la tabla
-        </h2>
+        <h2>Insertar una fila en la tabla</h2>
+        <p>Introduce los datos y pulsa el botón para agregar una fila en la tabla</p>
         <form name='insertarFila' method='post' action="Ejercicio6.php">
             <fieldset>
-                <p>DNI:<input type="text" name="dni" /> </p>
-                <p>Nombre: <input type="text" name="nombre" /> </p>
-                <p>Apellidos: <input type="text" name="apellidos" /></p>
-                <p>Email: <input type="text" name="email" /></p>
-                <p>Teléfono: <input type="text" name="telefono" /></p>
-                <p>Edad: <input type="number" name="edad" /></p>
-                <p>Sexo: <input type="text" name="sexo" /></p>
-                <p>Nivel de pericia informática: <input type="number" name="pericia" /></p>
-                <p>Tiempo: <input type="number" name="tiempo" /></p>
-                <p>Tarea realizada correctamente (SI/NO): <input type="text" name="correctamente" /></p>
-                <p>Comentarios: <input type="text" name="comentarios" /></p>
-                <p>Propuestas de mejora: <input type="text" name="propuestas" /></p>
-                <p>Valoración: <input type="number" name="valoracion" /></p>
+                <label for="txtDni"> DNI:<input id="txtDni" type="text" name="dni" /> </label>
+                <label for="txtNombre"> Nombre: <input id="txtNombre" type="text" name="nombre" /> </label>
+                <label for="txtApellidos"> Apellidos: <input id="txtApellidos" type="text" name="apellidos" /></label>
+                <label for="txtEmail"> Email: <input id="txtEmail" type="text" name="email" /></label>
+                <label for="txtTelefono"> Teléfono: <input id="txtTelefono" type="text" name="telefono" /></label>
+                <label for="nEdad"> Edad: <input id="nEdad" type="number" name="edad" /></label>
+                <label for="txtSexo"> Sexo: <input id="txtSexo" type="text" name="sexo" /></label>
+                <label for="nNivelPericia"> Nivel de pericia informática: <input id="nNivelPericia" type="number" name="pericia" /></label>
+                <label for="nTiempo"> Tiempo: <input id="nTiempo" type="number" name="tiempo" /></label>
+                <label for="txtCorrecto"> Tarea realizada correctamente (SI/NO): <input id="txtCorrecto" type="text" name="correctamente" /></label>
+                <label for="txtComentario"> Comentarios: <input id="txtComentario" type="text" name="comentarios" /></label>
+                <label for="txtPropuesta"> Propuestas de mejora: <input id="txtPropuesta" type="text" name="propuestas" /></label>
+                <label for="nValoracion"> Valoración: <input id="nValoracion" type="number" name="valoracion" /></label>
                 <input id='botoninsertarFila' type='submit' name='botoninsertarFila' value='Insertar fila'/>
             </fieldset>
 		</form>
     </section>
 
     <section > <a id="buscarDatos"></a>
-        <h2>
-             Buscar datos de una persona en la tabla
-        </h2>
+        <h2>Buscar datos de una persona en la tabla</h2>
+        <p>Introduce el DNI de la persona y pulsa el botón para que se muestren sus datos</p>
         <form name='buscarDatos' method='post' action="Ejercicio6.php">
             <fieldset>
-                <p>DNI:<input type="text" name="dniBuscar" /> </p>
+                <label for="dniBuscar">DNI:<input id="dniBuscar" type="text" name="dniBuscar" /> </label>
                 <input id='botonBuscarDatos' type='submit' name='botonBuscarDatos' value='Buscar datos'/>
             </fieldset>
 		</form>
     </section>
 
     <section > <a id="modificarFila"></a>
-        <h2>
-             Modifica los datos de una fila
-        </h2>
+        <h2>Modifica los datos de una fila</h2>
+        <p>Introduce el DNI de la persona cuyos datos quieres modificar, introduce los datos nuevos y pulsa el botón para modificarlos</p>
         <form name='modificarFila' method='post' action="Ejercicio6.php">
             <fieldset>
-                <p>DNI a modificar:<input type="text" name="dniParam" /> </p>
-                <p>DNI:<input type="text" name="dniModificado" /> </p>
-                <p>Nombre: <input type="text" name="nombreModificado" /> </p>
-                <p>Apellidos: <input type="text" name="apellidosModificado" /></p>
-                <p>Email: <input type="text" name="emailModificado" /></p>
-                <p>Teléfono: <input type="text" name="telefonoModificado" /></p>
-                <p>Edad: <input type="number" name="edadModificado" /></p>
-                <p>Sexo: <input type="text" name="sexoModificado" /></p>
-                <p>Nivel de pericia informática: <input type="number" name="periciaModificado" /></p>
-                <p>Tiempo: <input type="number" name="tiempoModificado" /></p>
-                <p>Tarea realizada correctamente (SI/NO): <input type="text" name="correctamenteModificado" /></p>
-                <p>Comentarios: <input type="text" name="comentariosModificado" /></p>
-                <p>Propuestas de mejora: <input type="text" name="propuestasModificado" /></p>
-                <p>Valoración: <input type="number" name="valoracionModificado" /></p>
+                <label for="txtDniAModificar">DNI a modificar:<input id="txtDniAModificar" type="text" name="dniParam" /> </label>
+                <label for="dniModificado">DNI:<input id="dniModificado" type="text" name="dniModificado" /> </label>
+                <label for="nombreModificado">Nombre: <input id="nombreModificado" type="text" name="nombreModificado" /> </label>
+                <label for="apellidosModificado">Apellidos: <input id="apellidosModificado" type="text" name="apellidosModificado" /></label>
+                <label for="emailModificado">Email: <input id="emailModificado" type="text" name="emailModificado" /></label>
+                <label for="telefonoModificado">Teléfono: <input id="telefonoModificado" type="text" name="telefonoModificado" /></label>
+                <label for="edadModificado">Edad: <input id="edadModificado" type="number" name="edadModificado" /></label>
+                <label for="sexoModificado">Sexo: <input id="sexoModificado" type="text" name="sexoModificado" /></label>
+                <label for="periciaModificado">Nivel de pericia informática: <input id="periciaModificado" type="number" name="periciaModificado" /></label>
+                <label for="tiempoModificado">Tiempo: <input id="tiempoModificado" type="number" name="tiempoModificado" /></label>
+                <label for="correctamenteModificado">Tarea realizada correctamente (SI/NO): <input id="correctamenteModificado" type="text" name="correctamenteModificado" /></label>
+                <label for="comentariosModificado">Comentarios: <input id="comentariosModificado" type="text" name="comentariosModificado" /></label>
+                <label for="propuestasModificado">Propuestas de mejora: <input id="propuestasModificado" type="text" name="propuestasModificado" /></label>
+                <label for="valoracionModificado">Valoración: <input id="valoracionModificado" type="number" name="valoracionModificado" /></label>
                 <input id='botonModificarFila' type='submit' name='botonModificarFila' value='Modificar fila'/>
             </fieldset>
 		</form>
     </section>
 
     <section > <a id="borrarDatos"></a>
-        <h2>
-             Borrar datos de una persona en la tabla
-        </h2>
+        <h2>Borrar datos de una persona en la tabla</h2>
+        <p>Introduce el DNI de la persona y pulsa el botón para que se borren sus datos</p>
         <form name='borrarDatos' method='post' action="Ejercicio6.php">
             <fieldset>
-                <p>DNI:<input type="text" name="dniBorrar" /> </p>
+                <label for="dniBorrar">DNI:<input id="dniBorrar" type="text" name="dniBorrar" /> </label>
                 <input id='botonBorrarDatos' type='submit' name='botonBorrarDatos' value='Borrar datos'/>
             </fieldset>
 		</form>
     </section>
 
     <section > <a id="generarInforme"></a>
-        <h2>
-            Generar el informe de estadísticas
-        </h2>
+        <h2>Generar el informe de estadísticas</h2>
+        <p>Pulsa el botón para generar el informe</p>
         <form name='generarInforme' method='post'>
             <fieldset>
                 <input id='botonGenerarInforme' type='submit' name='botonGenerarInforme' value='Generar informe'/>
@@ -135,23 +128,21 @@
     </section>
 
     <section > <a id="exportarDatos"></a>
-        <h2>
-            Exportar los datos a un fichero CSV
-        </h2>
+        <h2>Exportar los datos a un fichero CSV</h2>
+        <p>Pulsa el botón para exportar los datos actuales</p>
         <form name='exportarDatos' method='post'>
             <fieldset>
-                <input id='botonExportarDatos' type='submit' name='botonExportarDatos' value='Exportar datos'/>
+            <input id='botonExportarDatos' type='submit' name='botonExportarDatos' value='Exportar datos'/>
             </fieldset>
 		</form>
     </section>
 
     <section > <a id="importarDatos"></a>
-        <h2>
-            Importar los datos desde un fichero CSV
-        </h2>
+        <h2>Importar los datos desde un fichero CSV</h2>
+        <p>Selecciona el archivo CSV a importar y pulsa el botón para cargar los datos</p>
         <form name='importarDatos' action='#' method='post' enctype='multipart/form-data'>
             <fieldset>
-                <input id='archivoACargar' type='file' name='archivoACargar'/>
+                <label for="archivoACargar">Selecciona el archivo a cargar<input id='archivoACargar' type='file' name='archivoACargar'/></label>
                 <input id='botonImportarDatos' type='submit' name='botonImportarDatos' value='Importar datos'/>
             </fieldset>
 		</form>
