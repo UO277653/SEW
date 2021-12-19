@@ -31,7 +31,7 @@
         </nav>
     <section > <a id="añadirJugador"></a>
         <h2>Añadir un jugador</h2>
-        <p>Introduce los datos del jugador y pulsa el botón para añadirlo</p>
+        <p>Introduce los datos del jugador y pulsa el botón para añadirlo (se necesita que exista un club previamente)</p>
         <form name='añadirJugador' method='post' action="Ejercicio7.php">
             <fieldset>
                 <label for="txtIDJugador"> Id del jugador:<input id="txtIDJugador" type="text" name="id_jugador" /> </label>
@@ -45,7 +45,7 @@
     </section>
     <section > <a id="añadirClub"></a>
         <h2>Añadir un club</h2>
-        <p>Introduce los datos del club y pulsa el botón para añadirlo</p>
+        <p>Introduce los datos del club y pulsa el botón para añadirlo (se necesita que exista una liga previamente)</p>
         <form name='añadirClub' method='post' action="Ejercicio7.php">
             <fieldset>
                 <label for="txtIDClub"> Id del club:<input id="txtIDClub" type="text" name="id_club" /> </label>
@@ -70,7 +70,7 @@
     </section>
     <section > <a id="añadirPatrocinador"></a>
         <h2>Añadir un patrocinador</h2>
-        <p>Introduce los datos del patrocinador y pulsa el botón para añadirlo</p>
+        <p>Introduce los datos del patrocinador y pulsa el botón para añadirlo (se necesita que exista un club previamente)</p>
         <form name='añadirPatrocinador' method='post' action="Ejercicio7.php">
             <fieldset>
                 <label for="txtIDPatrocinador"> Id del patrocinador:<input id="txtIDPatrocinador" type="text" name="id_patrocinador" /> </label>
@@ -87,7 +87,7 @@
         <p>Introduce el id del jugador y pulsa el botón para que se muestren sus datos</p>
         <form name='buscarJugador' method='post' action="Ejercicio7.php">
             <fieldset>
-                <label for="idJugadorBuscar">ID del patrocinador:<input id="idJugadorBuscar" type="text" name="idJugadorBuscar" /> </label>
+                <label for="idJugadorBuscar">ID del jugador:<input id="idJugadorBuscar" type="text" name="idJugadorBuscar" /> </label>
                 <input id='botonBuscarJugador' type='submit' name='botonBuscarJugador' value='Buscar jugador'/>
             </fieldset>
 		</form>
@@ -126,8 +126,6 @@
 		</form>
     </section>
 
-
-
     <?php
         class BaseDatos {
 
@@ -151,12 +149,12 @@
                 //comprobamos conexión
                 if($db->connect_error) {
                     exit ("<p>ERROR de conexión:".$db->connect_error."</p>");  
-                } else {echo "<p>Conexión establecida con " . $db->host_info . "</p>";}
+                }
         
                 $cadenaSQL = "CREATE DATABASE IF NOT EXISTS ejercicio7 COLLATE utf8_spanish_ci";
 
                 if($db->query($cadenaSQL) === TRUE){
-                    echo "<p>Base de datos creada con éxito</p>";
+                    // La base se ha creado con éxito
                 } else { 
                     echo "<p>ERROR en la creación de la Base de Datos 'ejercicio7'. Error: " . $db->error . "</p>";
                     exit();
@@ -175,7 +173,7 @@
                 )";
                             
                 if($db->query($crearTabla) === TRUE){
-                    echo "<p>Tabla 'liga' creada con éxito </p>";
+                    // La tabla se ha creado con éxito
                 } else { 
                     echo "<p>ERROR en la creación de la tabla liga. Error : ". $db->error . "</p>";
                     exit();
@@ -192,7 +190,7 @@
                   )";
                           
                 if($db->query($crearTabla) === TRUE){
-                    echo "<p>Tabla 'club' creada con éxito </p>";
+                    // La tabla se ha creado con éxito
                  } else { 
                     echo "<p>ERROR en la creación de la tabla club. Error : ". $db->error . "</p>";
                     exit();
@@ -210,7 +208,7 @@
                   )";
                           
                 if($db->query($crearTabla) === TRUE){
-                    echo "<p>Tabla 'jugador' creada con éxito </p>";
+                    // La tabla se ha creado con éxito
                  } else { 
                     echo "<p>ERROR en la creación de la tabla jugador. Error : ". $db->error . "</p>";
                     exit();
@@ -229,7 +227,7 @@
                   )";
                           
                 if($db->query($crearTabla) === TRUE){
-                    echo "<p>Tabla 'patrocinador' creada con éxito </p>";
+                    // La tabla se ha creado con éxito
                  } else { 
                     echo "<p>ERROR en la creación de la tabla patrocinador. Error : ". $db->error . "</p>";
                     exit();
@@ -426,41 +424,6 @@
               //cerrar la conexión
               $db->close(); 
             }
-
-            function buscarDatos(){
-
-                $database = "ejercicio6";
-
-                // Conexión al SGBD local. En XAMPP el usuario debe estar creado previamente 
-                $db = new mysqli($this->servername,$this->username,$this->password,$database);
-      
-                // compruebo la conexion
-                if($db->connect_error) {
-                    exit ("<p>ERROR de conexión:".$db->connect_error."</p>");  
-                } else {echo "<p>Conexión establecida con " . $db->host_info . "</p>";}
-      
-                $consultaPre = $db->prepare('SELECT * FROM PruebasUsabilidad WHERE DNI = ?');
-                $consultaPre->bind_param('s', $_POST["dniBuscar"]);
-                $consultaPre->execute();
-                $resultado =  $consultaPre->get_result();
-                  
-                // compruebo los datos recibidos     
-                if ($resultado->num_rows > 0) {
-                      // Mostrar los datos en un lista
-                      echo "<p>Los datos en la tabla 'persona' son: </p>";
-                      echo "<ul>";
-                      echo "<li>". 'id' . " - " . 'dni' ." - ". 'nombre' ." - ". 'apellidos' ."</li>";
-                      while($row = $resultado->fetch_assoc()) {
-                          echo "<li>". $row['DNI'] . " - " . $row['Nombre']." - ". $row['Apellidos']."</li>"; 
-                      }
-                      echo "</ul>";
-                  } else {
-                      echo "<p>Tabla vacía. Número de filas = " . $resultado->num_rows . "</p>";
-                  }          
-              //cerrar la conexión
-              $db->close(); 
-            }
-
         }
 
         $baseDatos = new BaseDatos();

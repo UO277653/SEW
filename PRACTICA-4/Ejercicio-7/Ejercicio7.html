@@ -28,7 +28,7 @@
         </nav>
     <section > <a id="añadirJugador"></a>
         <h2>Añadir un jugador</h2>
-        <p>Introduce los datos del jugador y pulsa el botón para añadirlo</p>
+        <p>Introduce los datos del jugador y pulsa el botón para añadirlo (se necesita que exista un club previamente)</p>
         <form name='añadirJugador' method='post' action="Ejercicio7.php">
             <fieldset>
                 <label for="txtIDJugador"> Id del jugador:<input id="txtIDJugador" type="text" name="id_jugador" /> </label>
@@ -42,7 +42,7 @@
     </section>
     <section > <a id="añadirClub"></a>
         <h2>Añadir un club</h2>
-        <p>Introduce los datos del club y pulsa el botón para añadirlo</p>
+        <p>Introduce los datos del club y pulsa el botón para añadirlo (se necesita que exista una liga previamente)</p>
         <form name='añadirClub' method='post' action="Ejercicio7.php">
             <fieldset>
                 <label for="txtIDClub"> Id del club:<input id="txtIDClub" type="text" name="id_club" /> </label>
@@ -67,7 +67,7 @@
     </section>
     <section > <a id="añadirPatrocinador"></a>
         <h2>Añadir un patrocinador</h2>
-        <p>Introduce los datos del patrocinador y pulsa el botón para añadirlo</p>
+        <p>Introduce los datos del patrocinador y pulsa el botón para añadirlo (se necesita que exista un club previamente)</p>
         <form name='añadirPatrocinador' method='post' action="Ejercicio7.php">
             <fieldset>
                 <label for="txtIDPatrocinador"> Id del patrocinador:<input id="txtIDPatrocinador" type="text" name="id_patrocinador" /> </label>
@@ -84,7 +84,7 @@
         <p>Introduce el id del jugador y pulsa el botón para que se muestren sus datos</p>
         <form name='buscarJugador' method='post' action="Ejercicio7.php">
             <fieldset>
-                <label for="idJugadorBuscar">ID del patrocinador:<input id="idJugadorBuscar" type="text" name="idJugadorBuscar" /> </label>
+                <label for="idJugadorBuscar">ID del jugador:<input id="idJugadorBuscar" type="text" name="idJugadorBuscar" /> </label>
                 <input id='botonBuscarJugador' type='submit' name='botonBuscarJugador' value='Buscar jugador'/>
             </fieldset>
 		</form>
@@ -123,7 +123,5 @@
 		</form>
     </section>
 
-
-
-    <p>Conexión establecida con localhost via TCP/IP</p><p>Base de datos creada con éxito</p><p>Tabla 'liga' creada con éxito </p><p>Tabla 'club' creada con éxito </p><p>Tabla 'jugador' creada con éxito </p><p>Tabla 'patrocinador' creada con éxito </p></body>
+    <p>Los datos en la tabla 'jugador' son: </p><ul><li>id_jugador - nombre - apellido1 - apellido2 - id_club</li><li>1 - Messi - Lionel - Andrés - 1</li></ul></body>
 </html>
