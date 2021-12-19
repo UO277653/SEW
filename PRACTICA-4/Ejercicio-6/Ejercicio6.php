@@ -193,9 +193,6 @@
                 //selecciono la base de datos AGENDA para utilizarla
                 $db->select_db($database);
     
-                // se puede abrir y seleccionar a la vez
-                //$db = new mysqli($servername,$username,$password,$database);
-    
                 //Crear la tabla persona DNI, Nombre, Apellido
                 $crearTabla = "CREATE TABLE IF NOT EXISTS PruebasUsabilidad (
                     DNI varchar(9) NOT NULL,
@@ -237,8 +234,6 @@
                 //prepara la sentencia de inserción
                 $consultaPre = $db->prepare("INSERT INTO PruebasUsabilidad (DNI, Nombre, Apellidos, Email, Telefono, Edad, Sexo, Nivel_Pericia_Informatica, Tiempo, Tarea_realizada_correctamente, Comentarios, Propuestas_de_mejora, Valoración) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");   
             
-                //añade los parámetros de la variable Predefinida $_POST
-                // sss indica que se añaden 3 string
                 $consultaPre->bind_param('sssssisiisssi', 
                         $_POST["dni"],$_POST["nombre"], $_POST["apellidos"], $_POST["email"], $_POST["telefono"], $_POST["edad"], $_POST["sexo"], $_POST["pericia"], $_POST["tiempo"], $_POST["correctamente"], $_POST["comentarios"], $_POST["propuestas"], $_POST["valoracion"]);    
     
@@ -277,9 +272,29 @@
                       echo "<p>Los datos en la tabla 'persona' son: </p>";
                       echo "<p>Número de filas = " . $resultado->num_rows . "</p>";
                       echo "<ul>";
-                      echo "<li>". 'id' . " - " . 'dni' ." - ". 'nombre' ." - ". 'apellidos' ."</li>";
+                      echo "<li>". 'id' . " - " . 'dni' ." - ". 'nombre' ." - ". 'apellidos'
+                      ." - ". 'email'
+                      ." - ". 'teléfono'
+                      ." - ". 'edad'
+                      ." - ". 'sexo'
+                      ." - ". 'nivel de pericia informática'
+                      ." - ". 'tiempo'
+                      ." - ". 'tarea realizada correctamente'
+                      ." - ". 'comentarios'
+                      ." - ". 'propuestas de mejora'
+                      ." - ". 'valoración' ."</li>";
                       while($row = $resultado->fetch_assoc()) {
-                          echo "<li>". $row['DNI'] . " - " . $row['Nombre']." - ". $row['Apellidos']."</li>"; 
+                          echo "<li>". $row['DNI'] . " - " . $row['Nombre']." - ". $row['Apellidos']
+                          ." - ". $row['Email']
+                          ." - ". $row['Telefono']
+                          ." - ". $row['Edad']
+                          ." - ". $row['Sexo']
+                          ." - ". $row['Nivel_Pericia_Informatica']
+                          ." - ". $row['Tiempo']
+                          ." - ". $row['Tarea_realizada_correctamente']
+                          ." - ". $row['Comentarios']
+                          ." - ". $row['Propuestas_de_mejora']
+                          ." - ". $row['Valoración']."</li>"; 
                       }
                       echo "</ul>";
                   } else {
@@ -303,8 +318,6 @@
                 //prepara la sentencia de inserción
                 $consultaPre = $db->prepare("UPDATE PruebasUsabilidad SET DNI = ?, Nombre = ?, Apellidos = ? , Email = ?, Telefono = ?, Edad = ?, Sexo = ?, Nivel_Pericia_Informatica = ?, Tiempo = ?, Tarea_realizada_correctamente = ?, Comentarios = ?, Propuestas_de_mejora = ?, Valoración = ? WHERE DNI = ?");   
             
-                //añade los parámetros de la variable Predefinida $_POST
-                // sss indica que se añaden 3 string
                 $consultaPre->bind_param('sssssisiisssis', 
                         $_POST["dniModificado"],$_POST["nombreModificado"], $_POST["apellidosModificado"], $_POST["emailModificado"], $_POST["telefonoModificado"], $_POST["edadModificado"], $_POST["sexoModificado"], $_POST["periciaModificado"], $_POST["tiempoModificado"], $_POST["correctamenteModificado"], $_POST["comentariosModificado"], $_POST["propuestasModificado"], $_POST["valoracionModificado"], $_POST["dniParam"]);    
     
@@ -346,7 +359,7 @@
     
                 //Visualización de los resultados de la búsqueda
                  if ($resultado->fetch_assoc()!=NULL) {
-                    echo "<p>Las filas de la tabla 'persona' que van a ser eliminadas son:</p>";
+                    echo "<p>Las filas de la tabla 'PruebasUsabilidad' que van a ser eliminadas son:</p>";
                     $resultado->data_seek(0); //Se posiciona al inicio del resultado de búsqueda
                     while($fila = $resultado->fetch_assoc()) {
                         echo "<p>" . "id = " . " / dni = " . $fila["DNI"] . " / nombre = ".$fila['Nombre']." / apellidos = ". $fila['Apellidos'] . "</p>"; 
