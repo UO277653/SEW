@@ -142,17 +142,17 @@
 
             function sec() {
                 $pantallaActual = $this->getPantalla();
-                $this->pantalla = eval("return asin($pantallaActual) ;");
+                $this->pantalla = eval("return 1/cos($pantallaActual) ;");
             }
 
             function csc() {
                 $pantallaActual = $this->getPantalla();
-                $this->pantalla = eval("return acos($pantallaActual) ;");
+                $this->pantalla = eval("return 1/sin($pantallaActual) ;");
             }
 
             function cot() {
                 $pantallaActual = $this->getPantalla();
-                $this->pantalla = eval("return atan($pantallaActual) ;");
+                $this->pantalla = eval("return 1/tan($pantallaActual) ;");
             }
 
             function raizCuadrada() {
