@@ -17,13 +17,13 @@
 
 <body>
     <h1>Calculadora científica</h1>
-    <p>Práctica JavaScript</p>
+    <p>Práctica PHP</p>
 
     <?php
-        class Calculadora {
+        class CalculadoraBasica {
 
-            private $pantalla;
-            private $memoria;
+            protected $pantalla;
+            protected $memoria;
 
             function __construct(){
 
@@ -102,153 +102,130 @@
             function getPantalla(){
                 return $this->pantalla;
             }
+            
         }
 
-        class CalculadoraCientífica extends Calculadora{
-
-            private $operando1;
-            private $operando2;
-
-            function __construct(){
-
-                parent::__construct();
-
-                $this->operando1 = 0;
-                $this->operando2 = 0;
-            }
-
-            function mrc() {
-                $this->memoria = "";
-            }
+        class CalculadoraCientífica extends CalculadoraBasica{
 
             function mr() {
-                $this->operacion = $this->memoria;
                 $this->pantalla = $this->memoria;
             }
 
             function ms() {
-                if (!isNaN($this->pantalla))
-                    $this->memoria = $this->pantalla;
+                $this->memoria = $this->pantalla;
             }
 
             function elevarCuadrado() {
-                $this->operacion = pow(new Number($this->operacion), 2);
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return pow($pantallaActual, 2) ;");
             }
 
             function xElevadoAY() {
-                $this->operando1 = new Number($this->operacion);
-                $this->operacion = "";
-                $this->simbolo = "**";
-                $this->pantalla += "^";
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = $pantallaActual . "**";
             }
 
             function sin() {
-                $this->operacion = sin(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return sin($pantallaActual) ;");
             }
 
             function cos() {
-                $this->operacion = cos(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return cos($pantallaActual) ;");
             }
 
             function tan() {
-                $this->operacion = tan(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return tan($pantallaActual) ;");
             }
 
             function sec() {
-                $this->operacion = asin(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return asin($pantallaActual) ;");
             }
 
             function csc() {
-                $this->operacion = acos(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return acos($pantallaActual) ;");
             }
 
             function cot() {
-                $this->operacion = atan(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return atan($pantallaActual) ;");
             }
 
             function raizCuadrada() {
-                $this->operacion = sqrt(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return sqrt($pantallaActual) ;");
             }
 
             function partidoDeUno() {
-                $this->operacion = 1/new Number($this->operacion);
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return 1/$pantallaActual ;");
             }
 
             function invertir() {
-                $this->operacion = -new Number($this->operacion);
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return - $pantallaActual ;");
             }
 
             function logN() {
-                $this->operacion = log(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return log($pantallaActual) ;");
             }
 
             function log() {
-                $this->operacion = log10(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return log10($pantallaActual) ;");
             }
 
             function elevarDiez() {
-                $this->operacion = pow(10, new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return pow(10, $pantallaActual) ;");
             }
 
             function factorial(){
-                
-                $this->operacion = $this->calcularFactorial(new Number($this->pantalla));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = $this->calcularFactorial(floatval($pantallaActual));
             }
 
             function calcularFactorial($numero) {
                 $res = 1;
-                for($i = 1; $i < valueOf($numero); $i++){
+                for($i = 1; $i < $numero; $i++){
                     $res*=$i;
                 }
                 return $res;
             }
 
             function modulo() {
-                $this->operando1 = new Number($this->operacion);
-                $this->operacion = "";
-                $this->simbolo = "%";
-                $this->pantalla += "Mod";
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = $pantallaActual . "%";
             }
 
             function pi() {
-                $this->operacion += 3.14; // CAMBIAR
-                $this->pantalla += "π";
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = $pantallaActual . "3.14";
             }
 
             function exp() {
-                $this->operacion = exp(new Number($this->operacion));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return exp($pantallaActual) ;");
             }
 
             function valorAbsoluto(){
-                $this->operacion = abs(new Number($this->pantalla));
-                $this->pantalla = $this->operacion;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = eval("return abs($pantallaActual) ;");
             }
 
             function retroceso() {
-                $nuevoString = $this->operacion.substring(0, $this->operacion->length - 1);
-                $this->operacion = $nuevoString;
-                $nuevoString = $this->pantalla.substring(0, $this->pantalla->length - 1);
-                $this->pantalla = $nuevoString;
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = substr($pantallaActual, 0, -1);
             }
 
             function e(){
-                $this->operacion += 2.72; // CAMBIAR
-                $this->pantalla +="e";
+                $pantallaActual = $this->getPantalla();
+                $this->pantalla = $pantallaActual . "2.72";
             }
         }
 
@@ -261,25 +238,59 @@
         // isset
         if (count($_POST)>0) 
         {   
+            
             if(isset($_POST['botonMrc'])) $calculadora->mrc();
+            if(isset($_POST['botonMR'])) $calculadora->mr();
             if(isset($_POST['botonMmenos'])) $calculadora->mMenos();
             if(isset($_POST['botonMmas'])) $calculadora->mMas();
+            if(isset($_POST['botonMS'])) $calculadora->ms();
+            
+            if(isset($_POST['botonSin'])) $calculadora->sin();
+            if(isset($_POST['botonCos'])) $calculadora->cos();
+            if(isset($_POST['botonTan'])) $calculadora->tan();
+            if(isset($_POST['botonSec'])) $calculadora->sec();
+            if(isset($_POST['botonCsc'])) $calculadora->csc();
+
+            if(isset($_POST['botonCot'])) $calculadora->cot();
+            if(isset($_POST['botonPi'])) $calculadora->pi();
+            if(isset($_POST['botonE'])) $calculadora->e();
+            if(isset($_POST['botonC'])) $calculadora->borrar();
+            if(isset($_POST['botonRetroceso'])) $calculadora->retroceso();
+
+            if(isset($_POST['botonElevarCuadrado'])) $calculadora->elevarCuadrado();
+            if(isset($_POST['botonPartidoUno'])) $calculadora->partidoDeUno();
+            if(isset($_POST['botonAbsoluto'])) $calculadora->valorAbsoluto();
+            if(isset($_POST['botonExp'])) $calculadora->exp();
+            if(isset($_POST['botonModulo'])) $calculadora->modulo();
+
+            if(isset($_POST['botonRaizCuadrada'])) $calculadora->raizCuadrada();
+            if(isset($_POST['botonParentesisIzquierdo'])) $calculadora->dígitos('(');
+            if(isset($_POST['botonParentesisDerecho'])) $calculadora->dígitos(')');
+            if(isset($_POST['botonFactorial'])) $calculadora->factorial();
             if(isset($_POST['botonDivision'])) $calculadora->división();
+
+            if(isset($_POST['botonXelevadoAY'])) $calculadora->xElevadoAY();
             if(isset($_POST['botonSiete'])) $calculadora->dígitos('7');
             if(isset($_POST['botonOcho'])) $calculadora->dígitos('8');
             if(isset($_POST['botonNueve'])) $calculadora->dígitos('9');
             if(isset($_POST['botonMultiplicacion'])) $calculadora->multiplicación();
+
+            if(isset($_POST['botonDiezElevado'])) $calculadora->elevarDiez();
             if(isset($_POST['botonCuatro'])) $calculadora->dígitos('4');
             if(isset($_POST['botonCinco'])) $calculadora->dígitos('5');
             if(isset($_POST['botonSeis'])) $calculadora->dígitos('6');
             if(isset($_POST['botonMenos'])) $calculadora->resta();
+
+            if(isset($_POST['botonLogaritmoDecimal'])) $calculadora->log();
             if(isset($_POST['botonUno'])) $calculadora->dígitos('1');
             if(isset($_POST['botonDos'])) $calculadora->dígitos('2');
             if(isset($_POST['botonTres'])) $calculadora->dígitos('3');
             if(isset($_POST['botonMas'])) $calculadora->suma();
+
+            if(isset($_POST['botonLogaritmoNeperiano'])) $calculadora->logN();
+            if(isset($_POST['botonInvertir'])) $calculadora->invertir();
             if(isset($_POST['botonCero'])) $calculadora->dígitos('0');
             if(isset($_POST['botonComa'])) $calculadora->punto();
-            if(isset($_POST['botonC'])) $calculadora->borrar();
             if(isset($_POST['botonIgual'])) $calculadora->igual();
         }
 
@@ -319,7 +330,7 @@
                     <input id='botonParentesisIzquierdo' type='submit' name='botonParentesisIzquierdo' value='('/>
                     <input id='botonParentesisDerecho' type='submit' name='botonParentesisDerecho' value=')'/>
                     <input id='botonFactorial' type='submit' name='botonFactorial' value='n!'/>
-                    <input id='botonDivision' type='submit' name='botonDivision' value=&#xF7;/>
+                    <input id='botonDivision' type='submit' name='botonDivision' value='/'/>
 
                     <input id='botonXelevadoAY' type='submit' name='botonXelevadoAY' value='x^y'/>
                     <input id='botonSiete' type='submit' name='botonSiete' value='7'/>
@@ -331,7 +342,7 @@
                     <input id='botonCuatro' type='submit' name='botonCuatro' value='4'/>
                     <input id='botonCinco' type='submit' name='botonCinco' value='5'/>
                     <input id='botonSeis' type='submit' name='botonSeis' value='6'/>
-                    <input id='botonMenos' type='submit' name='botonMenos' value='-''/>
+                    <input id='botonMenos' type='submit' name='botonMenos' value='-'/>
 
                     <input id='botonLogaritmoDecimal' type='submit' name='botonLogaritmoDecimal' value='log'/>
                     <input id='botonUno' type='submit' name='botonUno' value='1'/>

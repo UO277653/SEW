@@ -58,5 +58,5 @@ body > form > fieldset > input{
     height: 100%;
     background-color: #dddddd;
     color: black;
-    border-style: none;
+    border-style: outset;
 }
