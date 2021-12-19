@@ -1,0 +1,129 @@
+
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="author" content="Stelian Adrian Stanci (UO277653)">
+    <title>Ejercicio 7</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+</head>
+
+<body>
+    <h1>Ejercicio 7 - Gestión de ligas, clubes y patrocinadores</h1>
+    <p>Contamos con una base de datos en la que hay clubes, que forman parte de una liga y tienen jugadores y patrocinadores. Esta aplicación permite realizar operaciones sobre esta base de datos.</p>  
+
+    <nav>
+            <a title="Añadir jugador" accesskey="J" tabindex="1" href="#añadirJugador">Añadir jugador</a>
+            <a title="Añadir club" accesskey="C" tabindex="2" href="#añadirClub">Añadir club</a>
+            <a title="Añadir liga" accesskey="L" tabindex="3" href="#añadirLiga">Añadir liga</a>
+            <a title="Añadir patrocinador" accesskey="P" tabindex="4" href="#añadirPatrocinador">Añadir patrocinador</a>
+            <a title="Ver datos jugador" accesskey="U" tabindex="5" href="#buscarJugador">Ver datos jugador</a>
+            <a title="Ver datos club" accesskey="B" tabindex="6" href="#buscarClub">Ver datos club</a>
+            <a title="Ver datos liga" accesskey="I" tabindex="7" href="#buscarLiga">Ver datos liga</a>
+            <a title="Ver datos patrocinador" accesskey="A" tabindex="8" href="#buscarPatrocinador">Ver datos patrocinador</a>
+        </nav>
+    <section > <a id="añadirJugador"></a>
+        <h2>Añadir un jugador</h2>
+        <p>Introduce los datos del jugador y pulsa el botón para añadirlo</p>
+        <form name='añadirJugador' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="txtIDJugador"> Id del jugador:<input id="txtIDJugador" type="text" name="id_jugador" /> </label>
+                <label for="txtNombre"> Nombre: <input id="txtNombre" type="text" name="nombre" /> </label>
+                <label for="txtApellido1"> Primer apellido: <input id="txtApellido1" type="text" name="apellido1" /></label>
+                <label for="txtApellido2"> Segundo apellido: <input id="txtApellido2" type="text" name="apellido2" /></label>
+                <label for="txtIDClubJ"> Id del club: <input id="txtIDClubJ" type="text" name="id_clubJ" /></label>
+                <input id='botonAñadirJugador' type='submit' name='botonAñadirJugador' value='Añadir jugador'/>
+            </fieldset>
+		</form>
+    </section>
+    <section > <a id="añadirClub"></a>
+        <h2>Añadir un club</h2>
+        <p>Introduce los datos del club y pulsa el botón para añadirlo</p>
+        <form name='añadirClub' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="txtIDClub"> Id del club:<input id="txtIDClub" type="text" name="id_club" /> </label>
+                <label for="txtNombreClub"> Nombre: <input id="txtNombreClub" type="text" name="nombre_club" /> </label>
+                <label for="nFundacion"> Año de fundación: <input id="nFundacion" type="number" name="fundacion" /></label>
+                <label for="txtIDLigaC"> Id de la liga: <input id="txtIDLigaC" type="text" name="id_ligaC" /></label>
+                <input id='botonAñadirClub' type='submit' name='botonAñadirClub' value='Añadir club'/>
+            </fieldset>
+		</form>
+    </section>
+    <section > <a id="añadirLiga"></a>
+        <h2>Añadir una liga</h2>
+        <p>Introduce los datos de la liga y pulsa el botón para añadirla</p>
+        <form name='añadirLiga' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="txtIDLiga"> Id de la liga: <input id="txtIDLiga" type="text" name="id_liga" /></label>
+                <label for="txtNombreLiga"> Nombre: <input id="txtNombreLiga" type="text" name="nombre_liga" /> </label>
+                <label for="nFundacionLiga"> Año de fundación de la liga: <input id="nFundacionLiga" type="number" name="fundacion" /></label>
+                <input id='botonAñadirLiga' type='submit' name='botonAñadirLiga' value='Añadir liga'/>
+            </fieldset>
+		</form>
+    </section>
+    <section > <a id="añadirPatrocinador"></a>
+        <h2>Añadir un patrocinador</h2>
+        <p>Introduce los datos del patrocinador y pulsa el botón para añadirlo</p>
+        <form name='añadirPatrocinador' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="txtIDPatrocinador"> Id del patrocinador:<input id="txtIDPatrocinador" type="text" name="id_patrocinador" /> </label>
+                <label for="txtNombrePatrocinador"> Nombre: <input id="txtNombrePatrocinador" type="text" name="nombre_patrocinador" /> </label>
+                <label for="nDinero"> Dinero que proporciona: <input id="nDinero" type="number" name="dinero" /></label>
+                <label for="txtIDClubP"> Id del club: <input id="txtIDClubP" type="text" name="id_clubP" /></label>
+                <input id='botonAñadirPatrocinador' type='submit' name='botonAñadirPatrocinador' value='Añadir patrocinador'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="buscarJugador"></a>
+        <h2>Buscar datos de un jugador</h2>
+        <p>Introduce el id del jugador y pulsa el botón para que se muestren sus datos</p>
+        <form name='buscarJugador' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="idJugadorBuscar">ID del patrocinador:<input id="idJugadorBuscar" type="text" name="idJugadorBuscar" /> </label>
+                <input id='botonBuscarJugador' type='submit' name='botonBuscarJugador' value='Buscar jugador'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="buscarClub"></a>
+        <h2>Buscar datos de un club</h2>
+        <p>Introduce el id del club y pulsa el botón para que se muestren sus datos</p>
+        <form name='buscarClub' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="idClubBuscar">ID del club:<input id="idClubBuscar" type="text" name="idClubBuscar" /> </label>
+                <input id='botonBuscarClub' type='submit' name='botonBuscarClub' value='Buscar club'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="buscarLiga"></a>
+        <h2>Buscar datos de una liga</h2>
+        <p>Introduce el id de la liga y pulsa el botón para que se muestren sus datos</p>
+        <form name='buscarLiga' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="idLigaBuscar">ID de la liga:<input id="idLigaBuscar" type="text" name="idLigaBuscar" /> </label>
+                <input id='botonBuscarLiga' type='submit' name='botonBuscarLiga' value='Buscar liga'/>
+            </fieldset>
+		</form>
+    </section>
+
+    <section > <a id="buscarPatrocinador"></a>
+        <h2>Buscar datos de un patrocinador</h2>
+        <p>Introduce el id del patrocinador y pulsa el botón para que se muestren sus datos</p>
+        <form name='buscarPatrocinador' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="idPatrocinadorBuscar">ID del patrocinador:<input id="idPatrocinadorBuscar" type="text" name="idPatrocinadorBuscar" /> </label>
+                <input id='botonBuscarPatrocinador' type='submit' name='botonBuscarPatrocinador' value='Buscar patrocinador'/>
+            </fieldset>
+		</form>
+    </section>
+
+
+
+    <p>Conexión establecida con localhost via TCP/IP</p><p>Base de datos creada con éxito</p><p>Tabla 'liga' creada con éxito </p><p>Tabla 'club' creada con éxito </p><p>Tabla 'jugador' creada con éxito </p><p>Tabla 'patrocinador' creada con éxito </p></body>
+</html>
